@@ -1,0 +1,11 @@
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+body {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+}

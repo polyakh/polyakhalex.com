@@ -1,0 +1,7 @@
+.cache
+node_modules
+gatsby
+public
+coverage
+/.git
+**/*.js
