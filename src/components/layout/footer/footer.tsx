@@ -21,5 +21,6 @@ const Footer = (props: FooterOwnProps): React.ReactElement => {
 
 Footer.displayName = COMPONENT_KEY;
 
-export { FooterOwnProps, COMPONENT_KEY };
+export {COMPONENT_KEY};
+export type { FooterOwnProps };
 export default Footer;

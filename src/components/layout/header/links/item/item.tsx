@@ -25,6 +25,7 @@ const Item = (props: ItemOwnProps): React.ReactElement => {
 
 Item.displayName = COMPONENT_KEY;
 
-export {ItemOwnProps, COMPONENT_KEY};
+export type { ItemOwnProps };
+export { COMPONENT_KEY};
 export default Item;
 // https://www.labnol.org/code/gatsby-images-200607

@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 // #region Local Imports
 import { WithAs } from "~types/common";
 import { Links } from "~components";
+import {graphql, useStaticQuery} from "gatsby";
 // #endregion Local Imports
 
 type HeaderOwnProps = WithAs
@@ -13,6 +14,18 @@ type HeaderOwnProps = WithAs
 const COMPONENT_KEY = "Header";
 
 const Header = (props: HeaderOwnProps): React.ReactElement => {
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  const { site } = useStaticQuery<any>(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+        }
+      }
+    }
+  `)
   const { as: Component = "header", ...restProps} = props;
   const { t } = useTranslation();
   return <Component {...restProps}>
@@ -24,5 +37,7 @@ const Header = (props: HeaderOwnProps): React.ReactElement => {
 
 Header.displayName = COMPONENT_KEY;
 
-export { HeaderOwnProps, COMPONENT_KEY };
+export type { HeaderOwnProps };
+export { COMPONENT_KEY };
+
 export default Header;

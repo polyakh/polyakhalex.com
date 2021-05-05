@@ -30,6 +30,7 @@ const Title = ({lvl = LVL2, direction = LTR, ...props}: TypographyOwnProps): Rea
 
 Title.displayName = COMPONENT_KEY;
 
-export { TypographyOwnProps, COMPONENT_KEY };
+export type { TypographyOwnProps };
+export { COMPONENT_KEY };
 export default Title;
 

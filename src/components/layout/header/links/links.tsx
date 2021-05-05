@@ -24,8 +24,8 @@ interface LinksOwnProps extends WithAs {
 
 const COMPONENT_KEY = "Links";
 const DEFAULT_LINKS: Link[] = [
-  // {path: TO_LESSONS(), title: "Lessons"},
-  // {path: TO_ABOUT_ME(), title: "About me"},
+  {path: TO_LESSONS(), title: "Lessons"},
+  {path: TO_ABOUT_ME(), title: "About me"},
 ];
 const DEFAULT_LOGO_PATH = "~images/";
 
@@ -41,7 +41,7 @@ const Links = (props: LinksOwnProps): React.ReactElement => {
   } = props;
   const getLink = () => links;
   return <Component {...restProps}>
-    <GatsbyLink to={"/"}>
+    <GatsbyLink to={TO_INDEX()}>
       <Image width={defaultImgDimension} height={defaultImgDimension} src={""} alt='logo'/>
     </GatsbyLink>
     <ul role={role}>{getLink().map(link)}</ul>
@@ -50,6 +50,7 @@ const Links = (props: LinksOwnProps): React.ReactElement => {
 
 Links.displayName = COMPONENT_KEY;
 
-export {LinksOwnProps, COMPONENT_KEY};
+export type { LinksOwnProps };
+export { COMPONENT_KEY };
 export default Links;
 // https://www.labnol.org/code/gatsby-images-200607

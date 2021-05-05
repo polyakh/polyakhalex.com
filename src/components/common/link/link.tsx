@@ -23,5 +23,6 @@ const Link = (props: LinkOwnProps): React.ReactElement => {
 };
 
 Link.displayName = "Link";
-export { LinkOwnProps, COMPONENT_KEY }
+export type { LinkOwnProps }
+export { COMPONENT_KEY }
 export default Link;

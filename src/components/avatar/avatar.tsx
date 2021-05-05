@@ -20,6 +20,7 @@ const Avatar = (props: AvatarOwnProps): React.ReactElement => {
 
 Avatar.displayName = COMPONENT_KEY;
 
-export { AvatarOwnProps, COMPONENT_KEY };
+export type { AvatarOwnProps }
+export { COMPONENT_KEY };
 export default Avatar;
 

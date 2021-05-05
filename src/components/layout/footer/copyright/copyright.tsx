@@ -21,5 +21,6 @@ const Copyright = (props: CopyrightOwnProps): React.ReactElement => {
 
 Copyright.displayName = COMPONENT_KEY;
 
-export { CopyrightOwnProps, COMPONENT_KEY };
+export {COMPONENT_KEY};
+export type { CopyrightOwnProps };
 export default Copyright;

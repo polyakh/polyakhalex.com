@@ -22,6 +22,7 @@ const Button = (props: ButtonOwnProps): React.ReactElement => {
 
 Button.displayName = COMPONENT_KEY;
 
-export { ButtonOwnProps, COMPONENT_KEY };
+export type { ButtonOwnProps };
+export { COMPONENT_KEY };
 export default Button;
 

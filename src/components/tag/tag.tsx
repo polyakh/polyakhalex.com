@@ -18,6 +18,7 @@ const Tag = (props: TagOwnProps): React.ReactElement => {
 
 Tag.displayName = COMPONENT_KEY;
 
-export { TagOwnProps, COMPONENT_KEY };
+export type { TagOwnProps };
+export { COMPONENT_KEY };
 export default Tag;
 

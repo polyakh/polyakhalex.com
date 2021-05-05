@@ -23,5 +23,7 @@ const Layout = (props: LayoutOwnProps): React.ReactElement => {
 
 Layout.displayName = COMPONENT_KEY;
 
-export { LayoutOwnProps, COMPONENT_KEY };
+export type { LayoutOwnProps };
+export { COMPONENT_KEY };
+
 export default Layout;

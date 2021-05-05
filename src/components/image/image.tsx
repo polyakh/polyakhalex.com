@@ -18,7 +18,6 @@ const COMPONENT_KEY = "Image";
 
 const Image = (props: ImageOwnProps): React.ReactElement => {
   const { as: Component = "img", width, height, ...restProps } = props;
-  // @ts-ignore
   return <div width={`${width}px`} height={`${height}px`}>
     <Component className={styles.image} {...restProps} />
   </div>;
@@ -26,6 +25,7 @@ const Image = (props: ImageOwnProps): React.ReactElement => {
 
 Image.displayName = COMPONENT_KEY;
 
-export { ImageOwnProps, COMPONENT_KEY };
+export type { ImageOwnProps };
+export { COMPONENT_KEY };
 export default Image;
 

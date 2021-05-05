@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 // #region Local Imports
 // #endregion Local Imports
 
-interface SEOProps {
+interface SEOOwnProps {
   title: string;
   description: string;
   image: string;
@@ -15,8 +15,7 @@ interface SEOProps {
 
 const COMPONENT_KEY = "SEO";
 
-const SEO = (props: SEOProps): React.ReactElement => {
-  const { title, description, image } = props;
+const SEO = (props: SEOOwnProps): React.ReactElement => {
 
   return <Helmet title={"test"} titleTemplate={"test"}>
   <meta name="description" content={"test"} />
@@ -25,5 +24,7 @@ const SEO = (props: SEOProps): React.ReactElement => {
 
 SEO.displayName = COMPONENT_KEY;
 
-export { SEOProps, COMPONENT_KEY };
+export type { SEOOwnProps };
+export {COMPONENT_KEY};
+
 export default SEO;

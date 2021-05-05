@@ -17,5 +17,6 @@ const Card = (props: CardOwnProps): React.ReactElement => {
 
 Card.displayName = COMPONENT_KEY;
 
-export { CardOwnProps, COMPONENT_KEY };
+export type { CardOwnProps };
+export { COMPONENT_KEY };
 export default Card;
