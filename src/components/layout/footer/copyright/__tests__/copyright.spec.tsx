@@ -4,13 +4,13 @@ import { render } from "@testing-library/react";
 //endregion
 
 //region Local Imports
-import Copyright, { COMPONENT_KEY } from "~components/layout/footer/copyright";
+import { COPYRIGHT_COMPONENT_KEY, Copyright } from "~components/layout";
 //endregion
 
-describe(COMPONENT_KEY, () => {
-    it(`should render as a ${COMPONENT_KEY} by default`, () => {
-      const testId = "copyright";
-      const { getByTestId } = render(<Copyright name={"Polyakh"} data-testid={testId}/>);
+describe(COPYRIGHT_COMPONENT_KEY, () => {
+    it(`Should render as a ${COPYRIGHT_COMPONENT_KEY} by default`, () => {
+      const testId = COPYRIGHT_COMPONENT_KEY;
+      const { getByTestId } = render(<Copyright data-testid={testId}/>);
       const container = getByTestId(testId);
     });
 });

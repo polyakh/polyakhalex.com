@@ -4,12 +4,12 @@ import { render, screen } from "@testing-library/react";
 //endregion
 
 //region Local Imports
-import { Title } from "~components/common/typography";
+import Title,{ COMPONENT_KEY } from "~components/common/typography/title";
 //endregion
 
-describe("Title", () => {
-    it("should render as a `Title` by default", () => {
-      const testId = "title";
+describe(COMPONENT_KEY, () => {
+    it(`Should render as a ${COMPONENT_KEY} by default`, () => {
+      const testId = COMPONENT_KEY;
       const fontSize = "1.5em"; // add fz
       const { getByTestId } = render(<Title data-testid={testId}/>);
       const container = getByTestId(testId);

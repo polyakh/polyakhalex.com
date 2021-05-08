@@ -6,7 +6,8 @@ import React from "react";
 import "~styles/core.css";
 import { WithAs } from "~types";
 import * as styles from "./styles.module.css";
-import { Header, Footer } from "./index";
+import { Header, Footer,  } from "./index";
+import { SEO  } from "~components";
 // #endregion Local Imports
 
 type LayoutOwnProps = WithAs
@@ -15,6 +16,7 @@ const COMPONENT_KEY = "Layout";
 const Layout = (props: LayoutOwnProps): React.ReactElement => {
   const {as: Component = "section", children } = props;
   return <Component className={styles.wrapper}>
+      <SEO />
       <Header/>
       <main className={styles.content}>{children}</main>
       <Footer/>

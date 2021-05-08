@@ -8,8 +8,8 @@ import { Footer, FOOTER_COMPONENT_KEY } from "~components/layout";
 //endregion
 
 describe(FOOTER_COMPONENT_KEY, () => {
-    it(`should render as a ${FOOTER_COMPONENT_KEY} by default`, () => {
-      const testId = "footer";
+    it(`Should render as a ${FOOTER_COMPONENT_KEY} by default`, () => {
+      const testId = FOOTER_COMPONENT_KEY;
       const { getByTestId } = render(<Footer data-testid={testId}/>);
       const container = getByTestId(testId);
     });

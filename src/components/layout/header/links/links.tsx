@@ -41,8 +41,8 @@ const Links = (props: LinksOwnProps): React.ReactElement => {
   } = props;
   const getLink = () => links;
   return <Component {...restProps}>
-    <GatsbyLink to={TO_INDEX()}>
-      <Image width={defaultImgDimension} height={defaultImgDimension} src={""} alt='logo'/>
+    <GatsbyLink area-lable={"Polyakh Blog, Back to homepage"} to={TO_INDEX()}>
+      <Image width={defaultImgDimension} height={defaultImgDimension} src={logoPath} alt='logo'/>
     </GatsbyLink>
     <ul role={role}>{getLink().map(link)}</ul>
   </Component>;

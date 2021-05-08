@@ -6,6 +6,7 @@ import { Link } from "gatsby";
 // #region Local Imports
 import { WithAs } from "~types/common";
 import { aboutMe } from "./styles.module.css";
+import { Layout, Title } from "~components";
 // #endregion Local Imports
 
 type AboutMePageOwnProps = WithAs
@@ -13,12 +14,15 @@ type AboutMePageOwnProps = WithAs
 const COMPONENT_KEY = "About-me";
 
 const AboutMe = (props: AboutMePageOwnProps): React.ReactElement => (
-  <h2 className={aboutMe}>
-    AboutMe
-  </h2>
+  <Layout>
+    <Title lvl={1}>
+      AboutMe
+    </Title>
+  </Layout>
 );
 
 AboutMe.displayName = COMPONENT_KEY;
 
-export { AboutMePageOwnProps, COMPONENT_KEY };
+export type { AboutMePageOwnProps };
+export { COMPONENT_KEY };
 export default AboutMe;

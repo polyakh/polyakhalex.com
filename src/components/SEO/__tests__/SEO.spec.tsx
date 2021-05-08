@@ -8,7 +8,9 @@ import SEO, { COMPONENT_KEY } from "~components/SEO";
 //endregion
 
 describe(COMPONENT_KEY, () => {
-    it(`should render as a ${COMPONENT_KEY} by default`, () => {
-
-    });
+  it(`Should render as a ${COMPONENT_KEY} by default`, () => {
+    const testId = COMPONENT_KEY;
+    const { getByTestId } = render(<SEO data-testid={testId}/>);
+    const container = getByTestId(testId);
+  });
 });

@@ -4,13 +4,13 @@ import {render} from "@testing-library/react";
 //endregion
 
 //region Local Imports
-import Link from "~components/common/link";
+import Link, { COMPONENT_KEY } from "~components/common/link";
 //endregion
 
-
-describe("Link", () => {
-    it("should render as a `Link` by default", () => {
-      const testId = "link";
-      const { getByTestId } = render(<Link data-testid={testId}/>);
-    });
+describe(COMPONENT_KEY, () => {
+  it(`Should render as a ${COMPONENT_KEY} by default`, () => {
+    const testId = COMPONENT_KEY;
+    const { getByTestId } = render(<Link data-testid={testId}/>);
+    const container = getByTestId(testId);
+  });
 });

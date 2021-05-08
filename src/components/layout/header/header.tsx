@@ -14,18 +14,6 @@ type HeaderOwnProps = WithAs
 const COMPONENT_KEY = "Header";
 
 const Header = (props: HeaderOwnProps): React.ReactElement => {
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
-  const { site } = useStaticQuery<any>(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-          description
-        }
-      }
-    }
-  `)
   const { as: Component = "header", ...restProps} = props;
   const { t } = useTranslation();
   return <Component {...restProps}>

@@ -7,9 +7,7 @@ const { appSrc, path } = require("./config/paths");
 // endregion
 
 module.exports = {
-  siteMetadata: {
-    title: "My Gatsby Site",
-  },
+  siteMetadata: require('./config/site-metadata'),
   plugins: [
     `gatsby-plugin-react-helmet`,
     {

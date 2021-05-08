@@ -9,7 +9,9 @@ import Layout, { COMPONENT_KEY } from "~components/Layout";
 
 
 describe(COMPONENT_KEY, () => {
-    it(`should render as a ${COMPONENT_KEY} by default`, () => {
-      const testId = "link";
-    });
+  it(`Should render as a ${COMPONENT_KEY} by default`, () => {
+    const testId = COMPONENT_KEY;
+    const { getByTestId } = render(<Layout data-testid={testId}/>);
+    const container = getByTestId(testId);
+  });
 });

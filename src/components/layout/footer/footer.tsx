@@ -4,6 +4,8 @@ import React from "react";
 
 // #region Local Imports
 import { WithAs } from "~types/common";
+import Copyright from "./copyright";
+import Profiles from "./profiles";
 // #endregion Local Imports
 
 type SocialLinks = "twitter" | "github" | "linkedin";
@@ -16,11 +18,11 @@ const COMPONENT_KEY = "Footer";
 
 const Footer = (props: FooterOwnProps): React.ReactElement => {
   const { as: Component = "footer", ...restProps} = props;
-  return <Component {...restProps}>Footer</Component>;
+  return <Component {...restProps}><Copyright /><Profiles /></Component>;
 };
 
 Footer.displayName = COMPONENT_KEY;
 
-export {COMPONENT_KEY};
 export type { FooterOwnProps };
+export {COMPONENT_KEY};
 export default Footer;

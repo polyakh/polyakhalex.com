@@ -6,6 +6,8 @@ import { Link } from "gatsby";
 // #region Local Imports
 import { WithAs } from "~types/common";
 import * as styles from "./styles.module.css";
+import { Layout, Title } from "~components";
+import { TO_INDEX } from "~definitions/routes/path";
 // #endregion Local Imports
 
 type NotFoundPageOwnProps = WithAs
@@ -13,20 +15,22 @@ type NotFoundPageOwnProps = WithAs
 const COMPONENT_KEY = "NotFoundPage";
 
 const NotFoundPage = (props: NotFoundPageOwnProps): React.ReactElement => (
-  <main className={styles.page}>
-    <title>404 - Page Not Found</title>
-    <h1 className={styles.heading}>Page not found</h1>
+  <Layout>
+    <Title lvl={1}>
+      Page not found
+    </Title>
     <p className={styles.paragraph}>
       Sorry
       <span role="img" aria-label="Pensive emoji">
         😔
       </span>
-      <Link to="/">Back to home page</Link>
+      <Link to={TO_INDEX()}>Back to home page</Link>
     </p>
-  </main>
+  </Layout>
 );
 
 NotFoundPage.displayName = COMPONENT_KEY;
 
-export { NotFoundPageOwnProps, COMPONENT_KEY };
+export type { NotFoundPageOwnProps };
+export { COMPONENT_KEY };
 export default NotFoundPage;

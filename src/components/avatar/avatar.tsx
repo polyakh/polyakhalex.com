@@ -5,7 +5,6 @@ import React from "react";
 // #region Local Imports
 import { WithAs } from "~types";
 import * as styles from "./styles.module.css";
-
 // #endregion Local Imports
 
 type AvatarOwnProps = WithAs

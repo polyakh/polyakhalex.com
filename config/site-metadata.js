@@ -19,9 +19,8 @@ module.exports = {
       twitter: "https://twitter.com/polyakhA",
       github: "https://github.com/polyakh",
       linkedin: "https://linkedin.com/in/alex-polyakh",
-    },
-    nickname: {
-      twitter: "polyakhA",
+      instagram: "https://www.instagram.com/polyakh_alex/?hl=ru",
+      telegram: "https://t.me/polyakhA",
     },
   },
 };
