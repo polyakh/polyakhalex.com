@@ -3,62 +3,83 @@ import React from "react";
 
 // #endregion Global Imports
 
-export interface CommonProps {
+interface CommonProps {
   className?: string;
   children?: React.ReactNode;
 }
 
-export interface WithAs<As extends React.ElementType | string = React.ElementType>
+interface WithAs<As extends React.ElementType | string = React.ElementType>
   extends CommonProps {
   as?: As;
 }
 
-export interface Title {
+interface CommonProps {
+  className?: string;
+  children?: React.ReactNode;
+}
+
+interface Title {
   readonly title: string;
 }
 
-export interface Description {
+interface Description {
   readonly description: string;
 }
 
-export interface Disabled {
+interface Disabled {
   readonly disabled: string;
 }
 
-export interface Icon {
-  readonly icon: string;
-}
-
-export interface Style {
+interface Style {
   readonly style: React.CSSProperties;
 }
 
-export interface className {
+interface className {
   readonly className: string;
 }
 
-export interface Src {
+interface Src {
   readonly src: string;
 }
 
-export interface SubTitle {
+interface SubTitle {
   readonly subTitle: string;
 }
 
-export interface Value {
+interface Value {
   readonly value: string;
 }
 
-export interface Loading {
+interface Loading {
   readonly isLoading: string;
 }
 
-export interface Checked {
+interface Checked {
   readonly isChecked: string;
 }
 
-export interface Datetime {
+interface Datetime {
   readonly datetime: string | React.ReactNode;
 }
 
+interface Tabindex {
+  readonly tabIndex?: number;
+}
 
+
+export type {
+  CommonProps,
+  WithAs,
+  Title,
+  Description,
+  Disabled,
+  Style,
+  className,
+  Src,
+  SubTitle,
+  Value,
+  Loading,
+  Checked,
+  Datetime,
+  Tabindex,
+}

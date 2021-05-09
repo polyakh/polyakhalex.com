@@ -19,6 +19,8 @@
     "lint:ts": "eslint src/**/*.{ts,tsx}"
   },
   "dependencies": {
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.3",
     "gatsby": "3.4.1",
     "gatsby-plugin-react-helmet": "4.4.0",
     "gatsby-source-filesystem": "3.4.0",

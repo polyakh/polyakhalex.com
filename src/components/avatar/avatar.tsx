@@ -3,7 +3,7 @@ import React from "react";
 // #endregion Global Imports
 
 // #region Local Imports
-import { WithAs } from "~types";
+import type { WithAs } from "~types";
 import * as styles from "./styles.module.css";
 // #endregion Local Imports
 

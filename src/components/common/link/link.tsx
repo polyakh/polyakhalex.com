@@ -3,7 +3,7 @@ import React, {AnchorHTMLAttributes} from "react";
 // #endregion Global Imports
 
 // #region Local Imports
-import { WithAs } from "~types/common";
+import type { WithAs } from "~types";
 // #endregion Local Imports
 
 

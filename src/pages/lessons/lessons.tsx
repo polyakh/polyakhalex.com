@@ -3,9 +3,9 @@ import React from "react";
 // #endregion Global Imports
 
 // #region Local Imports
-import { WithAs } from "~types/common";
+import type { WithAs } from "~types";
 import { Layout, Title } from "~components";
-import { lessons as lessonsStyles } from "./styles.module.css";
+import { LVL1 } from "~definitions";
 // #endregion Local Imports
 
 type LessonsPageOwnProps = WithAs
@@ -14,7 +14,7 @@ const COMPONENT_KEY = "Lessons";
 
 const Lessons = (props: LessonsPageOwnProps): React.ReactElement => (
   <Layout>
-    <Title lvl={1}>
+    <Title lvl={LVL1}>
       Lessons
     </Title>
   </Layout>

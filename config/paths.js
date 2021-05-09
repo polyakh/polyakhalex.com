@@ -13,6 +13,7 @@ const IMAGES = "images";
 const DEFINITIONS = "definitions";
 const HOOKS = "hooks";
 const LIBS = "libs";
+const PAGES = "pages";
 module.exports = {
   dotenv: resolveApp(".env"),
   appPath: resolveApp("."),
@@ -29,5 +30,6 @@ module.exports = {
     HOOKS,
     LIBS,
     TYPES,
+    PAGES
   }
 };

@@ -3,10 +3,9 @@ import React from "react";
 // #endregion Global Imports
 
 // #region Local Imports
-import "~styles/core.css";
-import { WithAs } from "~types";
+import type { WithAs } from "~types";
 import * as styles from "./styles.module.css";
-import { Header, Footer,  } from "./index";
+import { Header, Footer } from "./index";
 import { SEO  } from "~components";
 // #endregion Local Imports
 

@@ -20,6 +20,7 @@ module.exports = {
         "~hooks": resolve(appSrc, path.HOOKS),
         "~libs": resolve(appSrc, path.LIBS),
         "~types": resolve(appSrc, path.TYPES),
+        "~pages": resolve(appSrc, path.PAGES),
       }
     },
   ],

@@ -1,12 +1,11 @@
 // #region Global Imports
 import React from "react";
-import { Link } from "gatsby";
 // #endregion Global Imports
 
 // #region Local Imports
-import { WithAs } from "~types/common";
-import { aboutMe } from "./styles.module.css";
+import type { WithAs } from "~types";
 import { Layout, Title } from "~components";
+import { LVL1 } from "~definitions";
 // #endregion Local Imports
 
 type AboutMePageOwnProps = WithAs
@@ -15,7 +14,7 @@ const COMPONENT_KEY = "About-me";
 
 const AboutMe = (props: AboutMePageOwnProps): React.ReactElement => (
   <Layout>
-    <Title lvl={1}>
+    <Title lvl={LVL1}>
       AboutMe
     </Title>
   </Layout>

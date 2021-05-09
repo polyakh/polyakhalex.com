@@ -3,11 +3,13 @@ import React from "react";
 // #endregion Global Imports
 
 // #region Local Imports
-import {WithAs} from "~types";
+import type {WithAs} from "~types";
 // #endregion Local Imports
 
+const RESET = "reset";
+const SUBMIT = "submit";
 const DEFAULT_TYPE = "button";
-type Type = typeof DEFAULT_TYPE | "reset" | "submit";
+type Type = typeof DEFAULT_TYPE | typeof RESET | typeof SUBMIT;
 
 interface ButtonOwnProps extends WithAs {
   type?: Type;

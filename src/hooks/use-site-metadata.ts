@@ -10,10 +10,13 @@ const SITE_META_DATA = graphql`
           metaDescription
         }
         authorInfo {
+          name
           profiles {
             github
             linkedin
             twitter
+            instagram
+            telegram
           }
         }
       }

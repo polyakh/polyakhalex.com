@@ -4,7 +4,7 @@ import {render} from "@testing-library/react";
 //endregion
 
 //region Local Imports
-import Layout, { COMPONENT_KEY } from "~components/Layout";
+import Layout, { COMPONENT_KEY } from "~components/layout";
 //endregion
 
 

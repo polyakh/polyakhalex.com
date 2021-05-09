@@ -4,12 +4,12 @@ import {Link} from "gatsby";
 // #endregion Global Imports
 
 // #region Local Imports
-import {WithAs} from "~types/common";
+import {WithAs, Tabindex} from "~types";
 import {Link as LinkType} from "~components/layout/header/links";
 // #endregion Local Imports
 
 //region Types
-interface ItemOwnProps extends WithAs, LinkType {
+interface ItemOwnProps extends WithAs, LinkType, Tabindex {
   path: string;
   role?: string;
 }

@@ -3,16 +3,13 @@ import React from "react";
 // #endregion Global Imports
 
 // #region Local Imports
-import { WithAs } from "~types/common";
+import type { WithAs } from "~types";
 import Copyright from "./copyright";
 import Profiles from "./profiles";
 // #endregion Local Imports
 
-type SocialLinks = "twitter" | "github" | "linkedin";
 
-interface FooterOwnProps extends WithAs {
- readonly socialLinks?: {[key in SocialLinks]: string}
-}
+type FooterOwnProps = WithAs;
 
 const COMPONENT_KEY = "Footer";
 

@@ -1,23 +1,32 @@
 //region Local Imports
-import { Description, Title } from "./common";
+import type { Description, Title } from "./common";
 //endregion
 
-export interface Profiles {
+interface Profiles {
   twitter: string;
   linkedin: string;
   github: string;
+  instagram: string;
+  telegram: string;
 }
-export interface AuthorInfo extends Description, Title {
+interface AuthorInfo extends Description, Title {
   email: string;
   profiles: Profiles;
 }
 
-export interface AuthorStats {
+interface AuthorStats {
   twitterFollowersCount: string;
 }
 
-export interface SiteInfo extends Description {
+interface SiteInfo extends Description {
   description: string;
   metaTitle: string;
   repositoryUrl: string;
+}
+
+export type {
+  Profiles,
+  AuthorInfo,
+  AuthorStats,
+  SiteInfo,
 }

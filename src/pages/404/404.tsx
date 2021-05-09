@@ -4,10 +4,10 @@ import { Link } from "gatsby";
 // #endregion Global Imports
 
 // #region Local Imports
-import { WithAs } from "~types/common";
-import * as styles from "./styles.module.css";
 import { Layout, Title } from "~components";
-import { TO_INDEX } from "~definitions/routes/path";
+import { TO_INDEX, LVL1 } from "~definitions";
+import type { WithAs } from "~types";
+import * as styles from "./styles.module.css";
 // #endregion Local Imports
 
 type NotFoundPageOwnProps = WithAs
@@ -16,7 +16,7 @@ const COMPONENT_KEY = "NotFoundPage";
 
 const NotFoundPage = (props: NotFoundPageOwnProps): React.ReactElement => (
   <Layout>
-    <Title lvl={1}>
+    <Title lvl={LVL1}>
       Page not found
     </Title>
     <p className={styles.paragraph}>

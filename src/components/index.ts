@@ -1,5 +1,5 @@
 // Common
-export { Link, Button, Title } from "./common";
+export { Link, Button, Title, Icon } from "./common";
 
 // Layout
 export { default as Layout } from "./layout";
