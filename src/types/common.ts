@@ -13,13 +13,8 @@ interface WithAs<As extends React.ElementType | string = React.ElementType>
   as?: As;
 }
 
-interface CommonProps {
-  className?: string;
-  children?: React.ReactNode;
-}
-
 interface Title {
-  readonly title: string;
+  readonly title?: string;
 }
 
 interface Description {
@@ -66,6 +61,14 @@ interface Tabindex {
   readonly tabIndex?: number;
 }
 
+interface AltText {
+  readonly altText?: string;
+}
+
+interface Url {
+  readonly url?: string;
+}
+
 
 export type {
   CommonProps,
@@ -82,4 +85,6 @@ export type {
   Checked,
   Datetime,
   Tabindex,
+  AltText,
+  Url,
 }

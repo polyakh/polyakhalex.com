@@ -15,6 +15,7 @@ const COMPONENT_KEY = "Footer";
 
 const Footer = (props: FooterOwnProps): React.ReactElement => {
   const { as: Component = "footer", ...restProps} = props;
+
   return <Component {...restProps}><Copyright /><Profiles /></Component>;
 };
 

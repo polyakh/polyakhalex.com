@@ -18,7 +18,6 @@ const COMPONENT_KEY = "Copyright";
 const Copyright = (props: CopyrightOwnProps): React.ReactElement => {
   const {as: Component = "span", children, ...restProps} = props;
   const { authorInfo } = useSiteMetadata();
-  console.log(authorInfo)
   return <Component {...restProps}>© {currentYear} {authorInfo.name}{children}</Component>;
 };
 

@@ -13,6 +13,8 @@ export type {
   Checked,
   Datetime,
   Tabindex,
+  AltText,
+  Url,
 } from "./common";
 export type {
   IconNames, Icon,

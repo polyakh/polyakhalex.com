@@ -9,6 +9,8 @@ const { appSrc, path } = require("./config/paths");
 module.exports = {
   siteMetadata: require('./config/site-metadata'),
   plugins: [
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
     `gatsby-plugin-react-helmet`,
     {
       resolve: "gatsby-plugin-root-import",
